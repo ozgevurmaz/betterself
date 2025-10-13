@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+pnpm-lock.yaml
+
+# build outputs
+dist
+.next
+.expo
+android
+ios
+build
+coverage
+
+# env files
+.env
+.env.*

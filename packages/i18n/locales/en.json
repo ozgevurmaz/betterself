@@ -1,0 +1,13 @@
+{
+  "app.title": "BetterSelf",
+  "nav.login": "Login",
+  "nav.home": "Home",
+  "nav.habits": "Habits",
+  "nav.friends": "Friends",
+  "nav.stats": "Stats",
+  "today.habits": "Today's Habits",
+  "actions.done": "Done",
+  "actions.skip": "Skip",
+  "actions.missed": "Missed",
+  "friends.add": "Add Friend"
+}

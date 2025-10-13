@@ -1,0 +1,12 @@
+{
+  "app.title": "BetterSelf",
+  "nav.home": "Ana Sayfa",
+  "nav.habits": "Alışkanlıklar",
+  "nav.friends": "Arkadaşlar",
+  "nav.stats": "İstatistikler",
+  "today.habits": "Bugünün Alışkanlıkları",
+  "actions.done": "Tamamlandı",
+  "actions.skip": "Atla",
+  "actions.missed": "Kaçırıldı",
+  "friends.add": "Arkadaş Ekle"
+}
