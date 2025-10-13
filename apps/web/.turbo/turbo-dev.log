@@ -1,0 +1,270 @@
+
+> web@0.1.0 dev C:\Users\Ozge\Desktop\betterself\apps\web
+> next dev
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Ozge\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Ozge\Desktop\betterself\apps\web\pnpm-lock.yaml
+   * C:\Users\Ozge\Desktop\betterself\pnpm-lock.yaml
+
+   ▲ Next.js 15.5.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.107:3000
+
+ ✓ Starting...
+ ✓ Ready in 1758ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling / ...
+[Error: Can't resolve 'theme/css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'] {
+  details: "resolve 'theme/css' in 'C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\\theme doesn't exist"
+}
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Can't resolve 'theme/css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"theme/css"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m
+ [90m 3 | [39m[33m:[39mroot [33m{[39m
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|C:\Users\Ozge\Desktop\betterself\node_modules\.pnpm\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[2]!C:\Users\Ozge\Desktop\betterself\node_modules\.pnpm\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[3]!C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+[Error: Can't resolve 'theme/css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'] {
+  details: "resolve 'theme/css' in 'C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\\theme doesn't exist"
+}
+ GET / 500 in 4213ms
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Can't resolve 'theme/css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"theme/css"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m
+ [90m 3 | [39m[33m:[39mroot [33m{[39m
+ GET / 500 in 550ms
+ ✓ Compiled /favicon.ico in 214ms (591 modules)
+ GET /favicon.ico 500 in 232ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\Ozge\Desktop\betterself\apps\web\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\Ozge\Desktop\betterself\apps\web\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 503ms (977 modules)
+ GET / 200 in 527ms
+ GET /favicon.ico 200 in 52ms
+ ✓ Compiled in 187ms (977 modules)
+ GET / 200 in 131ms
+ ✓ Compiled in 188ms (977 modules)
+ GET / 200 in 107ms
+ ✓ Compiled in 170ms (977 modules)
+ GET / 200 in 103ms
+[Error: Can't resolve 'theme/variables.css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'] {
+  details: "resolve 'theme/variables.css' in 'C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\\theme doesn't exist"
+}
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Can't resolve 'theme/variables.css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m
+ [90m 3 | [39m[36m@import[39m [32m"theme/variables.css"[39m[33m;[39m
+ GET / 500 in 35ms
+ GET / 500 in 14ms
+[Error: Can't resolve 'theme/variables.css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'] {
+  details: "resolve 'theme/variables.css' in 'C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\apps\\web\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\betterself\\apps\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\theme doesn't exist\n" +
+    "      C:\\Users\\Ozge\\Desktop\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\Ozge\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\Users\\node_modules doesn't exist or is not a directory\n" +
+    "      C:\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\n' +
+    "        C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\bin\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\dist\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules\\next\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\\node_modules;C:\\Users\\Ozge\\Desktop\\betterself\\node_modules\\.pnpm\\node_modules\\theme doesn't exist"
+}
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Can't resolve 'theme/variables.css' in 'C:\Users\Ozge\Desktop\betterself\apps\web\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables.css"[39m[33m;[39m 
+ [90m 3 | [39m
+ GET / 500 in 22ms
+ ✓ Compiled /favicon.ico in 92ms (591 modules)
+ GET /favicon.ico 500 in 106ms
+ ✓ Compiled in 171ms (977 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 350ms
+ GET / 200 in 50ms
+ GET /favicon.ico 200 in 26ms
+ ✓ Compiled in 89ms (386 modules)
+ GET / 200 in 47ms
+ ✓ Compiled in 74ms (386 modules)
+ GET / 200 in 38ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.107:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling / ...
+[Error: Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)]
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables"[39m[33m;[39m
+ [90m 3 | [39m
+[Error: Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)]
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables"[39m[33m;[39m
+ [90m 3 | [39m
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Users\Ozge\Desktop\betterself\apps\web\.next\cache\webpack\client-development-fallback.pack.gz: Error: incorrect header check
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|C:\Users\Ozge\Desktop\betterself\node_modules\.pnpm\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[2]!C:\Users\Ozge\Desktop\betterself\node_modules\.pnpm\next@15.5.4_babel-plugin-re_1f351af7ab0a0d7aa9e08fd66f1d94f8\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[3]!C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+[Error: Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)]
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables"[39m[33m;[39m
+ [90m 3 | [39m
+ GET / 500 in 4362ms
+ ⨯ ./src/app/layout.tsx:2:1
+Module not found: Can't resolve 'theme/css'
+  1 | import "./globals.css";
+> 2 | import "theme/css";
+    | ^
+  3 | import { setLocale } from "i18n";
+  4 | import type { Metadata } from "next";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./src/app/layout.tsx
+Error:   [31mx[0m Expression expected
+   ,-[[36;1;4mC:\Users\Ozge\Desktop\betterself\apps\web\src\app\layout.tsx[0m:2:1]
+ [2m1[0m | import "./globals.css";
+ [2m2[0m | @import "theme/variables";
+   : [35;1m^[0m
+ [2m3[0m | import { setLocale } from "i18n";
+ [2m4[0m | import type { Metadata } from "next";
+   `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/layout.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[Error: Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)]
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables"[39m[33m;[39m
+ [90m 3 | [39m
+ GET / 500 in 153ms
+ ⨯ ./src/app/layout.tsx:2:1
+Module not found: Can't resolve 'theme/css'
+  1 | import "./globals.css";
+> 2 | import "theme/css";
+    | ^
+  3 | import { setLocale } from "i18n";
+  4 | import type { Metadata } from "next";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./src/app/layout.tsx:2:1
+Module not found: Can't resolve 'theme'
+  1 | import "./globals.css";
+> 2 | import "theme";
+    | ^
+  3 | import { setLocale } from "i18n";
+  4 | import type { Metadata } from "next";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled /favicon.ico in 108ms (575 modules)
+[Error: Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)]
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: C:\Users\Ozge\Desktop\betterself\apps\web\src\app\globals.css Package path ./variables is not exported from package C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme (see exports field in C:\Users\Ozge\Desktop\betterself\apps\web\node_modules\theme\package.json)
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"theme/variables"[39m[33m;[39m
+ [90m 3 | [39m
+ ✓ Compiled in 215ms (583 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled / in 133ms (574 modules)
+ GET / 200 in 153ms
+ GET / 200 in 539ms
+ ✓ Compiled in 108ms (386 modules)
+ GET / 200 in 54ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.107:3000
+
+ ✓ Starting...
+ ✓ Ready in 1978ms
