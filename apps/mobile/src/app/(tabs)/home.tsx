@@ -1,30 +1,50 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, Text, View } from "react-native";
-import { ThemedText, ThemedView } from "../../components/theme/themed";
 import { useTheme } from "../../components/theme/ThemeProvider";
 import { ThemeToggle } from "../../components/preferences/ThemeToggle";
+import { RatioBar } from "../../components/themed/RatioBar";
+import { ThemedView } from "../../components/themed/ThemedView";
+import { ThemedText } from "../../components/themed/ThemedText";
+import { HabitColorPicker } from "../../components/themed/HabitColorPicker";
+import { ThemedButton } from "../../components/themed/ThemedButton";
+import { ThemedInput } from "../../components/themed/ThemedInput";
+import { useState } from "react";
+import { HabitKey } from "../../components/theme/theme-helpers";
 
 export default function Home() {
   const { colors, isDark } = useTheme();
-  
+  const [habit, setHabit] = useState<HabitKey>("habit1");
+  const [progress, setProgress] = useState(0.42);
   return (
-    <SafeAreaView style={{ flex: 1, padding: 16 }} edges={['top','left','right','bottom']}>
-     <ThemedView style={[styles.container, { padding: colors.space.lg }]}>
-      <ThemeToggle />
+    <SafeAreaView style={{ flex: 1, padding: 16, backgroundColor: colors.bg }} edges={['top', 'left', 'right', 'bottom']}>
+      <ThemedView style={[styles.container, { padding: colors.space.lg }]}>
+        <ThemeToggle />
 
-      <ThemedView card style={[styles.card, { borderRadius: colors.radii['2xl'], borderColor: colors.border, borderWidth: 1 }]}>
-        <ThemedText style={{ fontSize: colors.fontSize['2xl'], fontWeight: '700', marginBottom: colors.space.sm }}>
-          BetterSelf Dashboard
+
+        <ThemedText weight="bold" size="lg" habitKey={habit}>
+          Today's habits
         </ThemedText>
-        <ThemedText muted>Merhaba Özge! Tema {isDark ? 'Dark' : 'Light'} modda.</ThemedText>
 
-        <View style={styles.habitsRow}>
-          {(['habit1','habit2','habit3','habit4','habit5','habit6'] as const).map((k) => (
-            <View key={k} style={{ width: 20, height: 20, borderRadius: 10, backgroundColor: (colors as any)[k], marginRight: 8 }} />
-          ))}
+        <RatioBar value={progress} />
+
+        <HabitColorPicker selected={habit} onSelect={setHabit} />
+
+        <ThemedInput placeholder="Add..." />
+
+        <View style={{ flexDirection: "row", gap: 10 }}>
+          <ThemedButton
+            title="+%10"
+            onPress={() => setProgress((p) => Math.min(1, p + 0.1))}
+          />
+          <ThemedButton
+            title="Reset"
+            variant="outline"
+            onPress={() => setProgress(0)}
+          />
         </View>
+
       </ThemedView>
-    </ThemedView>
+      <RatioBar value={30} />
     </SafeAreaView>
   );
 }

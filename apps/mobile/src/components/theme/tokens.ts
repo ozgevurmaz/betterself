@@ -2,7 +2,7 @@ export const lightTokens = {
     bg: '#F6F8FF',
     fg: '#1F2435',
     card: '#FFFFFF',
-    muted: '#EAEFFC',
+    muted: '#979ba6',
     border: '#D6DCEF',
 
     primary: '#6E8DFF',
@@ -21,7 +21,7 @@ export const darkTokens = {
     bg: '#171A22',
     fg: '#EAF0FF',
     card: '#1E2330',
-    muted: '#2A3140',
+    muted: '#46526b',
     border: '#374055',
 
     primary: '#5E7BEE',
