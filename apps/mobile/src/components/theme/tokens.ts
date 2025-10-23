@@ -9,12 +9,12 @@ export const lightTokens = {
     secondary: '#F2A4D9',
     accent: '#A7E9C9',
 
-    habit1: '#6E8DFF',
-    habit2: '#A7E9C9',
-    habit3: '#EAF28A',
-    habit4: '#F3E07A',
-    habit5: '#F2A4D9',
-    habit6: '#D0A6F0',
+    habit1: '#7B9DFF',
+    habit2: '#80CDAA',
+    habit3: '#C6D363',
+    habit4: '#F5C96E',
+    habit5: '#EE8CC7',
+    habit6: '#B793E8',
 };
 
 export const darkTokens = {
@@ -28,13 +28,15 @@ export const darkTokens = {
     secondary: '#E38BC8',
     accent: '#8FDDB6',
 
-    habit1: '#5E7BEE',
-    habit2: '#8FDDB6',
-    habit3: '#C9DA6E',
-    habit4: '#D6C65F',
-    habit5: '#E38BC8',
-    habit6: '#B58ADF',
+    habit1: '#6789FF',
+    habit2: '#63C3A2',
+    habit3: '#B8C74D',
+    habit4: '#E4B650',
+    habit5: '#E278B9',
+    habit6: '#A47DE2',
 };
+
+export type Theme = typeof darkTokens;
 
 export const radii = {
     md: 12,

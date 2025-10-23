@@ -1,39 +1,37 @@
 import React from "react";
 import { View, ViewStyle } from "react-native";
-import { useTheme } from "../theme/ThemeProvider";
-import { HabitKey, getHabitColor } from "../theme/theme-helpers";
+import { Theme } from "../../theme/tokens";
 
 type RatioBarProps = {
   value: number; // 0..1
-  habitKey?: HabitKey;
   height?: number;
   rounded?: boolean;
   style?: ViewStyle;
   showTrackBorder?: boolean;
+  theme: Theme
 };
 
 export const RatioBar: React.FC<RatioBarProps> = ({
   value,
-  habitKey,
   height = 10,
   rounded = true,
   style,
   showTrackBorder = true,
+  theme
 }) => {
-  const { colors } = useTheme();
+
   const clamped = Math.max(0, Math.min(1, value));
-  const fill = getHabitColor(colors, habitKey, colors.accent);
 
   return (
     <View
       style={[
         {
-          backgroundColor: colors.muted,
+          backgroundColor: theme.muted,
           height,
           borderRadius: rounded ? height / 2 : 0,
           overflow: "hidden",
           borderWidth: showTrackBorder ? 1 : 0,
-          borderColor: colors.border,
+          borderColor: theme.border,
         },
         style,
       ]}
@@ -42,7 +40,7 @@ export const RatioBar: React.FC<RatioBarProps> = ({
         style={{
           width: `${clamped * 100}%`,
           height: "100%",
-          backgroundColor: fill,
+          backgroundColor: theme.primary,
         }}
       />
     </View>

@@ -1,50 +1,56 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { useTheme } from "../../components/theme/ThemeProvider";
 import { ThemeToggle } from "../../components/preferences/ThemeToggle";
-import { RatioBar } from "../../components/themed/RatioBar";
-import { ThemedView } from "../../components/themed/ThemedView";
 import { ThemedText } from "../../components/themed/ThemedText";
-import { HabitColorPicker } from "../../components/themed/HabitColorPicker";
 import { ThemedButton } from "../../components/themed/ThemedButton";
-import { ThemedInput } from "../../components/themed/ThemedInput";
 import { useState } from "react";
 import { HabitKey } from "../../components/theme/theme-helpers";
+import { Friend, HabitDraft, ReminderValue, RepeatValue, TargetValue } from "apps/mobile/types.d";
+import { HabitForm } from "../../components/habits/HabitForm";
+
+import { t } from "i18n";
+import { RatioBar } from "../../components/ui/fields/RatioBar";
+import { HabitCard } from "../../components/themed/HabitCard";
+
+
+const MOCK: Friend[] = [
+  { id: "1", name: "Elif Özge", username: "elifozge" },
+  { id: "2", name: "Mert Y.", username: "merty" },
+  { id: "3", name: "Ece K." },
+];
 
 export default function Home() {
   const { colors, isDark } = useTheme();
-  const [habit, setHabit] = useState<HabitKey>("habit1");
-  const [progress, setProgress] = useState(0.42);
+  const [habits, setHabits] = useState<HabitDraft[]>([]);
+  const [isHabitFormOpen, setHabitFormOpen] = useState(false);
   return (
     <SafeAreaView style={{ flex: 1, padding: 16, backgroundColor: colors.bg }} edges={['top', 'left', 'right', 'bottom']}>
-      <ThemedView style={[styles.container, { padding: colors.space.lg }]}>
-        <ThemeToggle />
+      <HabitForm
+        friends={MOCK}
+        onSubmit={(draft) => {
 
+        }}
+        visible={isHabitFormOpen}
+        onClose={() => setHabitFormOpen(false)}
+      />
 
-        <ThemedText weight="bold" size="lg" habitKey={habit}>
-          Today's habits
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 10, marginHorizontal: 10, marginBottom: 2 }}>
+        <ThemedText weight="bold" size="lg" habitKey="habit1">
+          {t("today.title")}
         </ThemedText>
 
-        <RatioBar value={progress} />
+        <ThemedButton title={t("actions.addHabit")} onPress={() => { setHabitFormOpen(true) }} />
+      </View>
+      <RatioBar value={0.3} height={6} rounded theme={colors} />
+      
+      <ThemeToggle />
 
-        <HabitColorPicker selected={habit} onSelect={setHabit} />
+      {habits && habits.length > 0 && habits.map(habit =>
+        <HabitCard habit={habit} />
+      )}
 
-        <ThemedInput placeholder="Add..." />
 
-        <View style={{ flexDirection: "row", gap: 10 }}>
-          <ThemedButton
-            title="+%10"
-            onPress={() => setProgress((p) => Math.min(1, p + 0.1))}
-          />
-          <ThemedButton
-            title="Reset"
-            variant="outline"
-            onPress={() => setProgress(0)}
-          />
-        </View>
-
-      </ThemedView>
-      <RatioBar value={30} />
     </SafeAreaView>
   );
 }

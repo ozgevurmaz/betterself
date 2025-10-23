@@ -11,14 +11,7 @@ type HabitColorPickerProps = {
   gap?: number;
 };
 
-const DEFAULT_KEYS: HabitKey[] = [
-  "habit1",
-  "habit2",
-  "habit3",
-  "habit4",
-  "habit5",
-  "habit6",
-];
+const DEFAULT_KEYS: HabitKey[] = ["habit1", "habit2", "habit3", "habit4", "habit5", "habit6"];
 
 export const HabitColorPicker: React.FC<HabitColorPickerProps> = ({
   selected,
@@ -30,10 +23,12 @@ export const HabitColorPicker: React.FC<HabitColorPickerProps> = ({
   const { colors, isDark } = useTheme();
 
   return (
-    <View style={{ flexDirection: "row", flexWrap: "wrap", gap }}>
+    <View style={{ flexDirection: "row", flexWrap: "wrap", marginHorizontal: "auto", gap:4 }}>
       {keys.map((k) => {
         const c =
-          (colors as any)?.habits?.[k] || (colors as any)?.[k] || colors.primary;
+          (colors as any)?.habits?.[k] ||
+          (colors as any)?.[k] ||
+          colors.primary;
         const isActive = selected === k;
         return (
           <Pressable
